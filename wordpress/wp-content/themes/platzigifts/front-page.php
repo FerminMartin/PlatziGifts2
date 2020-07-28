@@ -24,18 +24,17 @@
             if($productos -> have_posts()){
                 while($productos->have_posts()){
                     $productos->the_post();
-                    ?>
+                ?>
 
-                <div class="col-4">
-                    <figure>
-                        <?php the_post_thumbnail('large'); ?>
+            <div class="col-4">
+                <figure> <?php the_post_thumbnail('large'); ?> 
                 </figure>
                 <h4 class='my-3 text-center'>
-                    <a href="<?php the_permalink(); ?>">
-                        <?php the_title(); ?>
+                    <a href="<?php the_permalink();?>">
+                        <?php the_title();?>
                     </a>
                 </h4>
-                </div>
+            </div>
 
                 <?php } 
             }
